@@ -4,7 +4,10 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const GEMINI_KEY = "AIzaSyAHs-T0oZFnI9FFjlmNoKUxzNrC1iwaB4A";
+const GEMINI_KEY =
+  (typeof import.meta !== "undefined" && import.meta.env?.VITE_GEMINI_API_KEY) ||
+  (typeof process !== "undefined" && process.env?.GEMINI_API_KEY) ||
+  "";
 const BOOK_COVER = "https://media.base44.com/images/public/69c320cc14a171ca1a982f7f/4b485d1f3_image.png";
 
 // [Full component code here — see deployed version at app-59a831c3.base44.app]

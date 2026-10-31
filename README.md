@@ -31,8 +31,12 @@
 - Framer Motion (animations)
 
 ## 环境变量
+Copy the line below into a local `.env` file (never commit it) and fill in your own key:
+
 ```
-GEMINI_API_KEY=AIzaSyAHs-T0oZFnI9FFjlmNoKUxzNrC1iwaB4A
+GEMINI_API_KEY=<your-gemini-api-key>
+# Vite-based builds also read:
+VITE_GEMINI_API_KEY=<your-gemini-api-key>
 ```
 
 ## 部署
